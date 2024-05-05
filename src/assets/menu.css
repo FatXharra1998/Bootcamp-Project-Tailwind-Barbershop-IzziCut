@@ -1,0 +1,34 @@
+
+
+@media screen and (max-width: 500px) {
+    #menu-toggler-icon {
+        display: block;
+        /* position: absolute;
+        top: 24px;
+        right: 20px; */
+        width: 45px;
+        height: 45px;
+        
+    }
+
+    #menu-toggler {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 20px;
+        background-color: rgba(45, 45, 45, 0);
+        border: none;
+        outline: none;
+        appearance: none;
+        width: 32px;
+        height: 32px;
+        
+
+    }
+    
+    #menu-toggler:checked+nav {
+        display: block
+        
+
+    }
+}

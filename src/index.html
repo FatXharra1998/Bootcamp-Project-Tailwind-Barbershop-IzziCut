@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop-Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="./assets/menu.css">
+  </head>
+  <body class="w-full mx-auto bg-orange-200">
+    <div style="background-image: url(./assets/images/bgpic.webp) ; background-size: cover;">
+    <!-- HEADER -->
+    <header class="flex justify-between  xl:h-52 lg:h-52 xs:h-auto">
+      <div class="flex xl:flex-row lg:flex-row xs:flex-col justify-between items-center w-full ">
+        <div class="flex justify-between items-center xl:w-auto lg:w-auto xs:w-full xl:h-auto lg:h-auto xs:h-24 " >
+          <img class="xl:w-50 lg:w-50 xl:h-40 lg:h-40 xl:ml-32 lg:ml-20 xs:h-20 mt-4 cursor-pointer" src="./assets/images/Logo.webp" alt="" />
+        <img src="./assets/images/burger-menu.jpg" alt="Menu Toggler Icon" id="menu-toggler-icon" class=" xl:hidden lg:hidden xs:inline-block h-5 w-5">
+        
+        </div>
+        <input type="checkbox" id="menu-toggler" class="xl:hidden lg:hidden xs:inline-block">
+        <!-- <nav class="xl:block lg:block xs:hidden"> -->
+          <nav class=" xl:w-auto lg:w-auto xs:w-full xl:py-0 lg:py-0 xs:py-4 xl:block lg:block xs:hidden ">
+        <ul class="flex xl:flex-row lg:flex-row xs:flex-col items-start xl:gap-10 lg:gap-10 xs:gap-4 font-semibold font-roboto text-orange-100 xl:text-xl lg:text-xl xs:text-sm xl:mr-32 lg:mr-20 ">
+          <a href="#"><li class="hover:text-orange-300">Home</li></a>
+          <a href="#"><li class="hover:text-orange-300">Our Team</li></a>
+          <a href="#"><li class="hover:text-orange-300">Gallery</li></a>
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <!-- MAIN / SECTION-1-->
+    <main>
+      <div class=" flex justify-between md:justify-center">
+        <div class="xl:w-1/2 lg:w-1/2 xs:w-full h-auto pt-4 flex flex-col items-center">
+          <div>
+            <p class="xl:text-7xl lg:text-7xl xs:text-5xl font-roboto font-extrabold xl:text-start xs:text-center xl:max-w-96 lg:max-w-96 text-orange-300">
+              Barbershop in Prizren KOSOVO
+            </p>
+          </div>
+          <div>
+            <p
+              class="xl:text-7xl lg:text-7xl xs:text-5xl font-roboto font-extrabold xl:text-start lg:text-start xs:text-center pt-10 max-w-96 text-orange-300"
+            >
+              Licensed Professional Barber
+            </p>
+          </div>
+          <div class="xl:text-start lg:text-start xs:text-center  pt-10 text-orange-300 text-xl max-w-96 font-extrabold">
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot text-3xl"> </i>
+                <span class="font-roboto font-extrabold text-4xl"
+                  >Bazhdarhane Street Prizren,KS 20000</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-phone-volume text-3xl"></i>
+                <span class="text-4xl font-roboto font-extrabold"
+                  >+(383) 48 550-503</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-clock text-3xl"></i
+                ><span class="text-4xl font-roboto">Monday Through Sunday</span>
+              </li>
+            </ul>
+          </div>
+          <div class="xl:text-start xs:text-center pt-16 mb-10">
+            <a
+              class="rounded-xl border-2 border-black  bg-black xl:px-8 xl:py-6 lg:py-6 lg:px-8 xs:p-2  font-roboto font-bold xl:text-xl lg:text-xl xs:text-xs  text-orange-400 xs:inline-block hover:text-black hover:bg-orange-400  hover:font-roboto  hover:transition-all "
+              href="#"
+              >BOOK AN APPOINTMENT</a
+            >
+          </div>
+        </div>
+        <div class="xl:w-1/2 lg:w-0 xs:w-0 h-auto  xl:flex xl:justify-center lg:hidden xs:hidden">
+          <img
+            src="./assets/images/Illustration1.jpg"
+            class="rounded-lg w-5/6 h-5/6 shadow-2xl shadow-gray-600"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+  </div>
+    <!-- SECTION-2 -->
+    <section class="my-10">
+      <!-- Regular Haircut -->
+      <div class="grid xl:grid-cols-4 xs:grid-cols-1 lg:grid-cols-2 lg:gap-9 xs:gap-11 justify-items-center">
+        <div class="flex flex-col">
+          <i class="fa-solid fa-scissors text-7xl"></i>
+          <span class="font-roboto text-2xl py-5">Regular Haircut</span>
+          <a
+            class="rounded-xl bg-black  px-3 py-4 font-roboto font-bold text-xl text-orange-400 text-center hover:text-black hover:bg-orange-400 hover:border-2 border-black hover:font-roboto hover:text-xl w-20"
+            href="#"
+            >MORE</a
+          >
+        </div>
+        <!-- Men's Facial -->
+        <div class="flex flex-col">
+          <img
+            width="78"
+            height="60"
+            src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/external-beard-st-patrick-day-vitaliy-gorbachev-fill-vitaly-gorbachev.png"
+            alt="external-beard-st-patrick-day-vitaliy-gorbachev-fill-vitaly-gorbachev"
+          />
+          <span class="font-roboto text-2xl py-5">Men's Facial</span>
+          <a
+             class="rounded-xl bg-black  px-3 py-4 font-roboto font-bold border-2 text-xl text-orange-400 text-center hover:text-black hover:bg-orange-400  border-black hover:font-roboto hover:text-xl w-20"
+            href="#"
+            >MORE</a
+          >
+        </div>
+        <!-- Royal Shave -->
+        <div class="flex flex-col">
+          <img
+            width="78"
+            height="60"
+            src="https://img.icons8.com/ios-filled/50/barber-clippers.png"
+            alt="barber-clippers"
+          />
+          <span class="font-roboto text-2xl py-5">Royal Shave</span>
+          <a
+          class="rounded-xl bg-black  px-3 py-4 font-roboto font-bold text-xl border-2 text-orange-400 text-center hover:text-black hover:bg-orange-400  border-black hover:font-roboto hover:text-xl w-20"
+          href="#"
+          >MORE
+            </a>
+        </div>
+        <!-- Kid's Haircut -->
+        <div class="flex flex-col">
+          <img
+            width="78"
+            height="60"
+            src="https://img.icons8.com/ios-glyphs/30/christmas-kid.png"
+            alt="christmas-kid"
+          />
+          <span class="font-roboto text-2xl py-5">Kids's Haircut</span>
+          <a
+          class="rounded-xl bg-black  px-3 py-4 font-roboto font-bold text-xl border-2 text-orange-400 text-center hover:text-black hover:bg-orange-400  border-black hover:font-roboto hover:text-xl w-20"
+          href="#"
+          >MORE</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Section-3 -->
+    <section>
+      <div class=" bg-gradient-to-r from-orange-300  to-red-300">
+        <div>
+          <p
+            class="text-orange-500 text-5xl font-roboto font-extrabold text-center px-6 pt-20"
+          >
+            Full service barber shop & men's grooming studio
+          </p>
+          <p
+            class="text-black text-2xl font-roboto font-extrabold text-center pt-10 xl:px-32 lg:px-32 xs:px-0"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quae
+            placeat eius error, cumque fugit molestias nobis optio, illum
+            excepturi amet facilis quidem commodi?
+          </p>
+        </div>
+        <div class="xl:flex xl:flex-row lg:flex lg:flex-row xl:justify-center xl:items-center lg:justify-center lg:items-center xs:inline-block  xl:gap-10 lg:gap-10 xs:gap-4 py-10 xs:ml-32 xl:ml-0 lg:ml-0">
+          <a
+            class="flex   justify-center  border-2 border-black rounded-xl bg-black xl:px-3 lg:px-3 xs:px-4 py-4    font-roboto font-bold text-xl text-orange-400 text-center hover:text-black hover:bg-orange-400  hover:border-black"
+            href="#"
+            >View Pricing</a
+          >
+          <a
+          class="flex justify-center border-2 border-black rounded-xl bg-black px-3 py-4 xl:mt-0 lg:mt-0 xs:mt-4   font-roboto font-bold text-xl text-orange-400 text-center hover:text-black hover:bg-orange-400  hover:border-black"
+          href="#"
+            >Book Online</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Section-4 -->
+    <section
+      style="
+        background-image: url(./assets/images/whyus.jpg);
+        height: 750px;
+        background-size: cover;
+      "
+    >
+      <div class="w-4/5 mx-auto flex justify-between items-center">
+        <div class="w-1/2 xl:block lg:block xs:hidden">
+          <h1 class="text-6xl text-orange-400 font-roboto font-extrabold py-5">
+            Why Choose us?
+          </h1>
+          <ul
+            class="text-2xl text-black font-roboto font-extrabold text-center  leading-10 max-w-96 bg-orange-300 rounded-3xl list-none p-5 mr-4 hover:opacity-50 "
+          >
+            <li>Always welcoming environment</li>
+            <li>We focus on the quality</li>
+            <li>We value both time and money of our clients</li>
+            <li>High quality products</li>
+          </ul>
+        </div>
+        <div class="rounded-3xl text-center py-8 px-3 bg-gray-900 mt-40 ">
+          <h1 class="text-5xl font-roboto text-orange-400 font-extrabold">
+            Working Hours
+          </h1>
+          <ul
+            class="text-xl text-orange-300 font-roboto font-extrabold leading-10 pt-8"
+          >
+            <li>SUNDAY 9AM-3PM</li>
+            <li>MONDAY 8AM-7PM</li>
+            <li>TUESDAY 8AM-7PM</li>
+            <li>WEDNESDAY 8AM-7PM</li>
+            <li>THURSDAY 8AM-7PM</li>
+            <li>FRIDAY 8AM-7PM</li>
+            <li>SATURDAY 8AM-7PM</li>
+          </ul>
+          <div class="pt-8 text-center flex justify-center">
+            <a
+              class="flex border-2 rounded-xl bg-black px-5 py-3 font-roboto font-bold text-xl text-orange-400 hover:text-black hover:bg-orange-400  border-black hover:transition-all
+              "
+              href="#"
+              >Book Online</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION-5 -->
+    <section class=" bg-orange-100 rounded-xl h-80 xl:block lg:block xs:hidden">
+      <!-- Header-of-section -->
+      <div>
+        <h1 class="text-4xl text-center font-roboto font-extrabold text-">
+          Our Pricing
+        </h1>
+      </div>
+      <!-- Container -->
+      <div class="flex flex-row justify-between  pt-10 px-4 ">
+        <!-- Pricing-left-part -->
+        <div class="w-1/2 pr-4">
+            <div class="flex justify-between border-b border-black py-2 font-roboto ">
+                <p class="text-2xl pb-1 text-gray-500">Regular Haircut</p>
+                <p class="text-2xl pb-1 text-amber-400">€5</p>
+            </div>
+            <div class="flex justify-between border-b border-black py-2 font-roboto">
+                <p class="text-2xl pb-1 text-gray-500">Haircut + Royal Shave</p>
+                <p class="text-2xl pb-1 text-amber-400">€7</p>
+            </div>
+            <div class="flex justify-between border-b border-black py-2 font-roboto">
+                <p class="text-2xl pb-1 text-gray-500">Beard Trim Machine</p>
+                <p class="text-2xl pb-1 text-amber-400">€1</p>
+            </div>
+            <div class="flex justify-between border-b border-black py-2 font-roboto">
+                <p class="text-2xl pb-1 text-gray-500">Haircut and Facial</p>
+                <p class="text-2xl pb-1 text-amber-400">€6</p>
+            </div>
+      </div>
+      <!-- Pricing-right-part -->
+      <div class="w-1/2 pl-4 ">
+        <div class="flex justify-between border-b border-black py-2 font-roboto">
+          <p class="text-2xl pb-1 text-gray-500">Royal Shave</p>
+          <p class="text-2xl pb-1 text-amber-400">€2</p>
+        </div>
+        <div class="flex justify-between border-b border-black py-2 font-roboto">
+          <p class="text-2xl pb-1 text-gray-500">Haircut + Beard Trim</p>
+          <p class="text-2xl pb-1 text-amber-400">€6</p>
+        </div>
+        <div class="flex justify-between border-b border-black py-2 font-roboto">
+          <p class="text-2xl pb-1 text-gray-500">Beard + Facial</p>
+          <p class="text-2xl pb-1 text-amber-400">€5</p>
+        </div>
+        <div class="flex justify-between border-b border-black py-2 font-roboto text-">
+          <p class="text-2xl pb-1 text-gray-500">Men's Facial</p>
+          <p class="text-2xl pb-1 text-amber-400">€4</p>
+        </div>
+      </div>
+    </section>
+    <!-- Section-6 -->
+    <section class=" bg-orange-200 rounded-xl">
+        <div>
+            <!-- Header-of-section -->
+            <div class="text-center text-black text-4xl font-roboto font-black py-7">
+                <h1 class="py-3">Experience the Best Haircut</h1>
+                <p class="py-3">Welcome to fade world</p>
+            </div>
+            <!-- Customers -->
+            <div class="xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 xs:grid-cols-1 justify-items-center xs:gap-0 xl:px-5 lg:px-5 xs:px-0 xs:grid xs:justify-items-center">
+                <!-- Customer1 -->
+                <img class="rounded-xl h-5/6 w-5/6 grid" src="./assets/images/customer1.jpg" alt="customer1">
+                <!-- Customer2 -->
+                <img class="rounded-xl h-5/6 w-5/6" src="./assets/images/customer2.jpg" alt="customer2">
+                <!-- Customer3 -->
+                <img class="rounded-xl h-5/6 w-5/6" src="./assets/images/customer3.jpg" alt="customer3">
+                <!-- Customer4 -->
+                <img class="rounded-xl h-5/6 w-5/6" src="./assets/images/customer4.jpg" alt="customer4">
+                <!-- Customer5 -->
+                <img class="rounded-xl h-5/6 w-5/6" src="./assets/images/customer5.jpg" alt="customer5">
+                <!-- Customer6 -->
+                <img class="rounded-xl h-5/6 w-5/6" src="./assets/images/customer6.jpg" alt="customer6">
+            </div>
+        </div>
+    </section>
+    <!-- Section-7 -->
+    <section class=" bg-gray-900 rounded-xl">
+        <div>
+            <!-- Header-of-section -->
+            <div class="text-center text-orange-300 text-4xl font-roboto font-extrabold py-7">
+                <h1 class="py-3">Barbershop Services</h1>
+            </div>
+            <!-- Container -->
+            <div class="xl:grid xl:grid-cols-4 xl:grid-rows-2 lg:grid lg:grid-cols-2 lg:grid-rows-2 xs:grid xs:grid-cols-2 xs:justify-items-center justify-items-center">
+                 <img class="grid col-span-2 row-span-2 rounded-xl w-3/4 h-5/6 hover:shadow-2xl hover:shadow-red-500" src="./assets/images/Illustration-barbershop-services.jpg" alt="Barbershop-services">
+                 <img class="w-10/12 h-4/6  rounded-xl hover:shadow-2xl hover:shadow-green-500" src="./assets/images/haircut.png" alt="haircut">
+                 <img class="w-10/12 h-4/6 rounded-xl hover:shadow-2xl hover:shadow-yellow-500" src="./assets/images/shaving.png" alt="shaving">
+                 <img class="w-10/12 h-4/6 rounded-xl hover:shadow-2xl hover:shadow-orange-500" src="./assets/images/beardtrim.png" alt="beardtrim">
+                 <img class="w-10/12 h-4/6 rounded-xl hover:shadow-2xl hover:shadow-purple-500" src="./assets/images/kidshaircut.png" alt="">
+            </div>
+        </div>
+</section>
+<!-- Footer -->
+<footer class="">
+    <!-- Container -->
+    <div class="xl:flex xl:flex-row lg:flex lg:flex-row xs:flex xs:flex-col  h-5/6">
+        <div class="xl:w-1/2 lg:w-1/2 xs:w-full ">
+            <img src="./assets/images/blurypic.webp" alt="blurypic" class="h-full">
+        </div>
+        <div class="xl:w-1/2 lg:w-1/2 xs:w-full bg-orange-200 ">
+            <!-- Header-of-section -->
+            <div class="text-center text-black text-4xl font-roboto font-extrabold py-1">
+                <h1 class="py-1 ">Contact Us!</h1>
+            </div>
+            <form class="flex flex-col gap-4 items-center ">
+                <label  for="name"></label>
+                <input class="w-5/6 p-1" type="text" id="name" placeholder="Enter your name"> 
+                <label for="email"></label>
+                <input class="w-5/6 p-1" type="email" id="email" placeholder="Enter a valid email address">
+                <label for="text"></label>
+                <textarea id="message" class="w-5/6 h-36 resize-none" placeholder="Enter your message"></textarea>
+            </form>
+            <div class="pt-4 pb-3 text-center flex justify-center">
+                <a
+                  class="flex border-2 rounded-xl bg-black xl:px-32 lg:px-24  py-2 font-roboto font-bold text-xl text-orange-400 hover:text-black hover:bg-orange-400 hover:border-2 border-black hover:font-roboto hover:text-xl hover:transition-all"
+                  href="#"
+                  >Submit</a
+                >
+              </div>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
